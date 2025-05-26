@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: service-discovery
+  profiles:
+    active: home
+
+server:
+  port: 6000
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:6000/eureka
